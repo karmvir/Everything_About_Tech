@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What is a Computer?</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <div class="page-container">
+    <div class="readable-box">
+      <h1>🖥️ What is a Computer?</h1>
+      <p><a class="back-link" href="../../index.html">← Back to Homepage</a></p>
+
+      <section>
+        <h2>🧠 Introduction</h2>
+        <p>
+          A computer is an electronic device that processes data based on a set of instructions.
+          It can store, retrieve, and process information efficiently using hardware and software.
+        </p>
+      </section>
+
+      <section>
+        <h2>⚙️ How It Works</h2>
+        <p>
+          Computers follow the input → process → output cycle.
+          They take data via input devices, process it using a CPU, and deliver output via monitors or speakers.
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <p>✨ Made with 💻 by <strong>Karmvir</strong> | <a href="https://github.com/karmvir">GitHub</a></p>
+  </footer>
+
+  <script>
+    // Apply saved theme on page load
+    if (localStorage.getItem("theme") === "light") {
+      document.body.classList.add("light");
+    }
+  
+    // Only available on homepage
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+      if (document.body.classList.contains("light")) {
+        localStorage.setItem("theme", "light");
+      } else {
+        localStorage.removeItem("theme");
+      }
+    }
+  </script>
+  
+</body>
+</html>

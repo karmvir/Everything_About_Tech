@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to Everything About Tech</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Everything About Tech</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>👋 Welcome to Everything About Tech</h1>
-  <p>This is a simple static site hosted using <strong>GitHub Pages</strong>.</p>
-  <p>Edit <code>index.html</code> to start building your site!</p>
-  <p>✨ Made with 💻 by <strong>Karmvir</strong></p>
+  <canvas id="stars"></canvas>
+
+  <section class="terminal-hero">
+    <h1 class="flicker-text">💡 Everything About Tech</h1>
+    <p class="typewriter-text">> Booting knowledge kernel... Connecting to mainframe...</p>
+  </section>
+
+  <main class="topics-grid" id="start">
+    <div class="card">
+      <h2>🖥️ Foundations of Computing</h2>
+      <ul>
+        <li><a href="topics/computing/what-is-a-computer.html">What is a Computer?</a></li>
+        <li><a href="#">Logic Gates & Boolean Algebra</a></li>
+        <li><a href="#">Boot Process</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🌐 Networking</h2>
+      <ul>
+        <li><a href="#">Network Basics</a></li>
+        <li><a href="#">IP Addressing</a></li>
+        <li><a href="#">Firewalls & ACLs</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🤖 Artificial Intelligence</h2>
+      <ul>
+        <li><a href="#">Coming Soon...</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>🚀 Made with 💻 by <strong>Karmvir</strong> | <a href="https://github.com/karmvir">GitHub</a></p>
+  </footer>
+
+  <script>
+    // Apply saved theme on page load
+    if (localStorage.getItem("theme") === "light") {
+      document.body.classList.add("light");
+    }
+  
+    // Only available on homepage
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+      if (document.body.classList.contains("light")) {
+        localStorage.setItem("theme", "light");
+      } else {
+        localStorage.removeItem("theme");
+      }
+    }
+  </script>
+  <button class="theme-toggle" onclick="toggleTheme()">🌓 Toggle Theme</button>
+   
 </body>
 </html>
