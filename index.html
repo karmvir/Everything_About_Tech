@@ -11,32 +11,133 @@
 
   <section class="terminal-hero">
     <h1 class="flicker-text">💡 Everything About Tech</h1>
-    <p class="typewriter-text">> Booting knowledge kernel... Connecting to mainframe...</p>
+    <p class="typewriter-text">&gt; Booting knowledge kernel... Connecting to mainframe...</p>
   </section>
 
   <main class="topics-grid" id="start">
     <div class="card">
       <h2>🖥️ Foundations of Computing</h2>
       <ul>
-        <li><a href="topics/computing/what-is-a-computer.html">What is a Computer?</a></li>
-        <li><a href="#">Logic Gates & Boolean Algebra</a></li>
-        <li><a href="#">Boot Process</a></li>
+        <li><a href="#">What is a Computer System?</a></li>
+        <li><a href="#">Types of CPUs and Architectures</a></li>
+        <li><a href="#">Types of Computer Systems</a></li>
+        <li><a href="#">Memory & Storage Fundamentals</a></li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>🌐 Networking</h2>
+      <h2>🌐 Networking & Communications</h2>
       <ul>
-        <li><a href="#">Network Basics</a></li>
-        <li><a href="#">IP Addressing</a></li>
-        <li><a href="#">Firewalls & ACLs</a></li>
+        <li><a href="#">Networking Basics</a></li>
+        <li><a href="#">Network Topologies & Types</a></li>
+        <li><a href="#">Symmetric vs Asymmetric Connections</a></li>
+        <li><a href="#">OSI and TCP/IP Models</a></li>
+        <li><a href="#">Protocols and Services</a></li>
+        <li><a href="#">Wired vs Wireless Communications</a></li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>🤖 Artificial Intelligence</h2>
+      <h2>🧠 Operating Systems</h2>
       <ul>
-        <li><a href="#">Coming Soon...</a></li>
+        <li><a href="#">What is an Operating System?</a></li>
+        <li><a href="#">Types of Operating Systems</a></li>
+        <li><a href="#">Processes and Scheduling</a></li>
+        <li><a href="#">Memory Management</a></li>
+        <li><a href="#">File Systems and Permissions</a></li>
+        <li><a href="#">Users, Groups, and Authentication</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🔧 Programming & Scripting</h2>
+      <ul>
+        <li><a href="#">Programming Basics</a></li>
+        <li><a href="#">Programming Paradigms</a></li>
+        <li><a href="#">Popular Programming Languages</a></li>
+        <li><a href="#">Data Structures & Algorithms</a></li>
+        <li><a href="#">Automation Scripting</a></li>
+        <li><a href="#">Version Control (Git)</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📁 Application Development</h2>
+      <ul>
+        <li><a href="#">Types of Applications</a></li>
+        <li><a href="#">Frontend Development</a></li>
+        <li><a href="#">Backend Development</a></li>
+        <li><a href="#">Databases & Storage Systems</a></li>
+        <li><a href="#">Testing and Debugging</a></li>
+        <li><a href="#">Deployment Fundamentals</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🏠 Web, Mail & Hosting</h2>
+      <ul>
+        <li><a href="#">Web Servers: Apache, NGINX</a></li>
+        <li><a href="#">Mail Infrastructure</a></li>
+        <li><a href="#">FTP & File Sharing (NFS, Samba)</a></li>
+        <li><a href="#">DNS & Domain Management</a></li>
+        <li><a href="#">Hosting Models</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>⚙️ Infrastructure & DevOps</h2>
+      <ul>
+        <li><a href="#">Infrastructure Fundamentals</a></li>
+        <li><a href="#">Configuration Management</a></li>
+        <li><a href="#">CI/CD Pipelines</a></li>
+        <li><a href="#">Containers & Docker</a></li>
+        <li><a href="#">Kubernetes & Orchestration</a></li>
+        <li><a href="#">Monitoring & Logging</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>☁️ Cloud Computing</h2>
+      <ul>
+        <li><a href="#">Cloud Models: IaaS, PaaS, SaaS</a></li>
+        <li><a href="#">Popular Providers (AWS, Azure, GCP)</a></li>
+        <li><a href="#">Compute & Storage Services</a></li>
+        <li><a href="#">Serverless & Event-driven</a></li>
+        <li><a href="#">Cloud Networking</a></li>
+        <li><a href="#">IAM & Policies</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📊 Data, AI & Analytics</h2>
+      <ul>
+        <li><a href="#">Data Engineering & Pipelines</a></li>
+        <li><a href="#">Business Intelligence</a></li>
+        <li><a href="#">AI & Machine Learning</a></li>
+        <li><a href="#">Natural Language Processing</a></li>
+        <li><a href="#">MLOps</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🔒 Security & Compliance</h2>
+      <ul>
+        <li><a href="#">System & Network Security</a></li>
+        <li><a href="#">Application Security</a></li>
+        <li><a href="#">Vulnerability Management</a></li>
+        <li><a href="#">Identity & Access Management</a></li>
+        <li><a href="#">Compliance Frameworks</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🚀 Emerging Technologies</h2>
+      <ul>
+        <li><a href="#">Blockchain & Web3</a></li>
+        <li><a href="#">Quantum Computing</a></li>
+        <li><a href="#">Edge Computing & IoT</a></li>
+        <li><a href="#">AR, VR & Metaverse</a></li>
+        <li><a href="#">Green IT & FinOps</a></li>
       </ul>
     </div>
   </main>
@@ -46,12 +147,9 @@
   </footer>
 
   <script>
-    // Apply saved theme on page load
     if (localStorage.getItem("theme") === "light") {
       document.body.classList.add("light");
     }
-  
-    // Only available on homepage
     function toggleTheme() {
       document.body.classList.toggle("light");
       if (document.body.classList.contains("light")) {
@@ -61,7 +159,6 @@
       }
     }
   </script>
-  <button class="theme-toggle" onclick="toggleTheme()">🌓 Toggle Theme</button>
-   
+  <button class="theme-toggle" onclick="toggleTheme()">🌑 Toggle Theme</button>
 </body>
 </html>
